@@ -1,23 +1,16 @@
 #include<stdio.h>
-int main()
-{
-
-int i,t;
-scanf("%d",&t);
-
-for(i=0; i<2 ; i++)
-{
-       int  n,m,k;
-      scanf("%d%d%d",&n,&m,&k);
-       if(n<=(m-k))
-      {
-           printf("YES
+int main(){
+    int t;
+    scanf("%d",&t);
+    for(int i=1;i<=t;i++){
+        int n,m,k;
+        scanf("%d%d%d",&n,&m,&k);
+        if(n<=(m-k)){
+            printf("YES
 ");
-       }
-      else
-     {
+        }
+        else{
         printf("NO
 ");
-     }
-}
+    }}
 }
