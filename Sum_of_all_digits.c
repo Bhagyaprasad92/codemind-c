@@ -1,13 +1,15 @@
 #include<stdio.h>
+int dig(int a){
+    int r,s=0;
+    while(a!=0){
+    r=a%10;
+    s+=r;
+    a/=10;
+}printf("%d",s);
+    return s;
+}
 int main(){
-    int a,b,sum=0;
+    int a,s;
     scanf("%d",&a);
-    while(a>0)
-    {
-         b=a%10;
-        sum+=b;
-        a/=10;
-        
-    }
-    printf("%d",sum);
+    dig(a);
 }
